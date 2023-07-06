@@ -1,20 +1,24 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 :root {
   --grayDarker: #a9a9a9;
   --black: #000000;
   --white: #ffffff;
+  --font-primary: Verdana, Geneva, Tahoma, sans-serif;
+  --font-secondary: 'Sriracha', cursive;
+  --font-third: 'Passion One', cursive;  
 }
 
 html, body {
   min-height: 100vh;
   background-color: var(--grayDarker);
+  font-family: var(--font-primary);
 }
 
 header {
@@ -26,6 +30,8 @@ header {
 header > h1 {
   padding-top: 50px;
   font-variant: small-caps;
+  font-family: var(--font-third);
+  font-size: 10vw;
 }
 
 header > p {
@@ -35,7 +41,7 @@ header > p {
 a {
   color: var(--white);
   text-decoration: none;
-  font-weight: bold;
+  font-weight: bolder;
 }
 
 a:hover {
@@ -47,6 +53,8 @@ section {
   padding-bottom: 10vh;
   padding-left: 30px;
   line-height: 2em;
+  font-family: var(--font-secondary);
+  font-size: 3.5vw;
 }
 
 .normal {
@@ -55,13 +63,14 @@ section {
 }
 
 .imagem {
-  background: rgba(0, 0, 0, 0.185);
+  background: rgba(51, 51, 51);
   color: var(--white);
 }
 
 .imagem > p {
-  width: 400px;
-  background-color: rgba(0, 0, 0, 0.251);
+  display: inline-block;
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.253);
 }
 
 footer {
