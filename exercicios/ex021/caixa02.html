@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grouping Tags</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background: dimgray;
+        margin: 0;
+      }
+
+      header {
+        background: white;
+
+        padding: 20px;
+        margin: 10px;
+      }
+
+      nav {
+        background: #777;
+        padding: 3px;
+        box-shadow: 5px 2px 2px 1px rgba(0, 0, 0, 0.463);
+      }
+
+      nav > a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        margin: auto 30px;
+      }
+      
+      nav > a:hover {
+        text-decoration: underline;
+      }
+      
+      main {
+        padding: 10px;
+        margin: 10px;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 5px 2px 2px 1px rgba(0, 0, 0, 0.463);
+      }
+
+      article {
+        background: lightgray;
+        padding: 20px;
+      }
+
+      article > aside {
+        background: rgb(165, 165, 165);
+      }
+
+      footer {
+        padding: 5px;
+        margin: 0;
+        background: black;
+        text-align: center;
+        color: white;
+      }
+
+      footer > p {
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Logo</h1>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Home</a>
+        <a href="#">Home</a>
+        <a href="#">Home</a>
+      </nav>
+    </header>
+    <main>
+      <section id="assuntos">
+        <p>Esportes Politica e Tecnologia</p>
+      </section>
+      <section id="noticias">
+        <article>
+          <h2>Notícia sobre o brasil</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+            voluptatum error quidem, repudiandae reprehenderit suscipit, sed
+            aliquid eligendi odit perferendis eos laboriosam, veniam voluptas
+            nostrum molestiae odio ad nesciunt. Quis!
+          </p>
+          <aside>
+            <p>artigo escrito por dfdasd</p>
+          </aside>
+        </article>
+        <article></article>
+      </section>
+    </main>
+    <footer>
+      <p>Desenvolvido pelo CursoemVideo &copy;</p>
+    </footer>
+  </body>
+</html>
