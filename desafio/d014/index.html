@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    table {
+      width: 600px;
+    }
+
+    thead, tfoot {
+      background-color: #555;
+      color: white;
+      border: 1px solid black;
+    }
+
+    tbody {
+      font-weight: bold;
+      text-align: center;
+      border: 1px solid black;
+    }
+
+    tr, td {
+      border: 1px solid black;
+      font-weight: normal;
+    }
+
+    #destaque {
+      text-align: left;
+      background-color: #555;
+      color: white;
+      font-weight: bold;
+    }
+
+    #num {
+      background-color: #555;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <thead>
+      <th>Área</th>
+      <th>Disciplina</th>
+      <th>Notas</th>
+      <th>Média</th>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="font-weight: bold;" rowspan="4">Exatas</td>
+        <td>Matematica</td>
+        <td>0.0</td>
+        <td>0.0</td>
+      </tr>
+      <tr>
+        <td>Fisica</td>
+        <td>0.0</td>
+        <td>0.0</td>
+      </tr>
+      <tr>
+        <td class="materia">Quimica</td>
+        <td>0.0</td>
+        <td>0.0</td>
+      </tr>
+      <tr>
+        <td class="materia">Biologia</td>
+        <td>0.0</td>
+        <td>0.0</td>
+      </tr>
+      <tr>
+        <td id="destaque" colspan="3">Média de Exatas</td>
+        <td id="num">0.0</td>
+      </tr>
+      <tr>
+        <td rowspan="2">Humanas</td>
+        <td>Historia</td>
+        <td>0.0</td>
+        <td>0.0</td>
+      </tr>
+      <tr>
+        <td>Geografia</td>
+        <td>0.0</td>
+        <td>0.0</td>
+      </tr>
+      <tr>
+        <td id="destaque" colspan="3">Média de Humanas</td>
+        <td id="num">0.0</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
