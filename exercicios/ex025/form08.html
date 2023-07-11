@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+  </style>
+</head>
+<body>
+    <h1>Exemplo Formulário</h1>
+    <form action="" method="get" autocomplete="on">
+      <p>
+        <label for="inum1">Numero 1:</label>
+        <input 
+          type="number" 
+          name="num1" 
+          id="inum1" 
+          min="0" 
+          max="50" 
+          oninput="isoma.innerHTML = Number(inum1.value) + Number(inum2.value)"
+          required 
+          >
+      </p>
+      <p>
+        <label for="inum2">Numero 2:</label>
+        <input 
+          type="number" 
+          name="num2" 
+          id="inum2" 
+          min="0" 
+          max="50" 
+          oninput="isoma.innerHTML = Number(inum1.value) + Number(inum2.value)"
+          required 
+          >
+      </p>
+      <p>
+        <label for="isoma">Soma:</label>
+        <output name="soma" id="isoma">0</output>
+      </p>
+      <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+      </p>
+    </form>
+</body>
+</html>
