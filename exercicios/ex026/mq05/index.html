@@ -6,9 +6,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="estilos/styles.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
     <title>Medía Query</title>
   </head>
-  <body>
+  <body onresize="changeSize()">
     <header>
       <h1>Meu Site</h1>
       <span class="material-icons" id="burguer" onclick="clickMenu()">
@@ -104,6 +105,14 @@
           menu.style.display = 'none';
         } else {
           menu.style.display = 'block';
+        }
+      }
+
+      const changeSize = () => {
+        if (window.innerWidth >= 768) {
+          menu.style.display = 'block'
+        }else {
+          menu.style.display = 'none'
         }
       }
     </script>
