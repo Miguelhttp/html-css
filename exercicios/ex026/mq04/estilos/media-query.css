@@ -1,0 +1,76 @@
+/* Todas as demais Mídias */
+@charset "UTF-8";
+/* Breakpoint
+  * Pequenas Telas: até 600px
+  * Celular: 600px até 768px
+  * Tablet: 768px até 992px
+  * Desktop: 992px até 1200px
+  * Grandes Telas: acima 1200px
+*/
+/* Impressão */
+@media print {
+  * {
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+  body {
+    background-image: url('../imagens/back-print.jpg'); /* Desnecessário */
+  }
+
+  main {
+    border: 2px solid black;
+  }
+
+  main::after {
+    content: 'Essa impressão foi feita atráves do site W3CSchool.com';
+    text-decoration: underline;
+  }
+
+  main h1 {
+    text-shadow: none;
+    color: black;
+  }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  body {
+    background-image: url('../imagens/back-tablet.jpg');
+  }
+
+  #phone{display: none;}
+  #tablet{display: block;} 
+  #impressao{display: none;}
+  #desktop{display: none;}
+  #tv{display: none;}
+}
+
+/* Desktop */
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  body {
+    background-image: url('../imagens/back-pc.jpg');
+  }
+
+  #phone{display: none;}
+  #tablet{display: none;} 
+  #impressao{display: none;}
+  #desktop{display: block;}
+  #tv{display: none;}
+}
+
+/* Televisão */
+@media screen and (min-width: 1200px) {
+  body {
+    background-image: url('../imagens/back-tv.jpg');
+  }
+
+  main {
+    width: 700px;
+  }
+
+  #phone{display: none;}
+  #tablet{display: none;} 
+  #impressao{display: none;}
+  #desktop{display: none;}
+  #tv{display: block;}
+}
